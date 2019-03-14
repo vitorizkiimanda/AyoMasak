@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the MasukPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { DaftarPage } from '../daftar/daftar';
 
 @IonicPage()
 @Component({
@@ -20,6 +14,11 @@ export class MasukPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MasukPage');
+  }
+
+  //ini fungsi , seperti matematika f(x)= x + y
+  pindah(){
+    this.navCtrl.push(DaftarPage)
   }
 
 }
