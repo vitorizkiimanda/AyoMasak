@@ -12,6 +12,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { MasukPage } from '../pages/masuk/masuk';
 import { DaftarPage } from '../pages/daftar/daftar';
+import { BerandaPage } from '../pages/beranda/beranda';
+import { ResepPage } from '../pages/resep/resep';
+import { UploadPage } from '../pages/upload/upload';
+import { FavoritPage } from '../pages/favorit/favorit';
+import { ProfilPage } from '../pages/profil/profil';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { DaftarPage } from '../pages/daftar/daftar';
     HomePage,
     TabsPage,
     MasukPage,
-    DaftarPage
+    DaftarPage,
+    BerandaPage,
+    ResepPage,
+    UploadPage,
+    FavoritPage,
+    ProfilPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +45,12 @@ import { DaftarPage } from '../pages/daftar/daftar';
     HomePage,
     TabsPage,
     MasukPage,
-    DaftarPage
+    DaftarPage,
+    BerandaPage,
+    ResepPage,
+    UploadPage,
+    FavoritPage,
+    ProfilPage
   ],
   providers: [
     StatusBar,
