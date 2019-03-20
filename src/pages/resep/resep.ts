@@ -7,9 +7,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'resep.html',
 })
 export class ResepPage {
-
-  favorit : Boolean = false
-
   dataResep = [
     {
       id : 0,
