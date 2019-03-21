@@ -18,7 +18,7 @@
       <ion-col col-4>
         <button class="fav" clear ion-button icon-only (click)="ubahFav(data)">
           <ion-icon *ngIf="!data.favorit" name="heart-outline"></ion-icon>
-          <ion-icon *ngIf="data.favorit" name="heart"></ion-icon>
+          <ion-icon *ngIf="data.favorit" color="danger" name="heart"></ion-icon>
         </button>
         <img
           [src]="data.foto"
