@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar color="biruTua">
+    <ion-title>status</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <img [src]="data.user_photo" alt="gambar">
+  <h2 text-center>{{data.user_nama}}</h2>
+  <p>{{data.user_status}}</p>
+
+  <h3>{{tes.deskripsi}}</h3>
+  <ul>
+    <li *ngFor="let data of tes.bahan">{{data}}</li>
+  </ul>
+
+  <iframe 
+    [src]="video" 
+    frameborder="0"
+    allowfullscreen></iframe>
+</ion-content>

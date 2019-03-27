@@ -8,10 +8,11 @@
 
 
 <ion-content text-center>
-  <img class="gambar" src="http://saveabandonedbabies.org/wp-content/uploads/2015/08/default.png" alt="picture">
-  <img class="gambar" src="http://saveabandonedbabies.org/wp-content/uploads/2015/08/default.png" alt="picture">
-  <img class="gambar" src="http://saveabandonedbabies.org/wp-content/uploads/2015/08/default.png" alt="picture">
-  <img class="gambar" src="http://saveabandonedbabies.org/wp-content/uploads/2015/08/default.png" alt="picture">
-  <img class="gambar" src="http://saveabandonedbabies.org/wp-content/uploads/2015/08/default.png" alt="picture">
-
+  <ion-fab right bottom>
+    <button ion-fab color="biruTua" (click)="tambahFoto()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
+  <img *ngFor="let data of dataUpload" class="gambar" [src]="data.foto" alt="picture">
+  
 </ion-content>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
+import { ResepRinciPage } from '../resep-rinci/resep-rinci';
 
 @IonicPage()
 @Component({
@@ -31,7 +32,10 @@ export class ResepPage {
     }
   ]
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    public app : App) {
   }
 
   ionViewDidLoad() {
@@ -40,6 +44,10 @@ export class ResepPage {
 
   ubahFav(data){
     this.dataResep[data.id].favorit = !this.dataResep[data.id].favorit 
+  }
+
+  bukaRinci(){
+    this.app.getRootNav().push(ResepRinciPage)
   }
 
 }

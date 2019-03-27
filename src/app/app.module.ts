@@ -17,6 +17,8 @@ import { ResepPage } from '../pages/resep/resep';
 import { UploadPage } from '../pages/upload/upload';
 import { FavoritPage } from '../pages/favorit/favorit';
 import { ProfilPage } from '../pages/profil/profil';
+import { StatusPage } from '../pages/status/status';
+import { ResepRinciPage } from '../pages/resep-rinci/resep-rinci';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ProfilPage } from '../pages/profil/profil';
     ResepPage,
     UploadPage,
     FavoritPage,
-    ProfilPage
+    ProfilPage,
+    StatusPage,
+    ResepRinciPage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +54,9 @@ import { ProfilPage } from '../pages/profil/profil';
     ResepPage,
     UploadPage,
     FavoritPage,
-    ProfilPage
+    ProfilPage,
+    StatusPage,
+    ResepRinciPage
   ],
   providers: [
     StatusBar,

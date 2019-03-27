@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { StatusPage } from '../status/status';
 
 @IonicPage()
 @Component({
@@ -76,6 +77,10 @@ export class BerandaPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BerandaPage');
+  }
+
+  bukaStatus(data){
+    this.navCtrl.push(StatusPage, data)
   }
 
 }

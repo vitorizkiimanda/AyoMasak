@@ -10,7 +10,7 @@
 <ion-content padding>
   <!-- ini cetakannya -->
   <ion-list>
-    <ion-item *ngFor="let data of dataStatus">
+    <ion-item *ngFor="let data of dataStatus" (click)="bukaStatus(data)">
       <ion-avatar item-start>
         <img [src]="data.user_photo">
       </ion-avatar>

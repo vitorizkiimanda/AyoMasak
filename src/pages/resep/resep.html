@@ -11,7 +11,7 @@
 
   <ion-grid>
     <ion-row *ngFor="let data of dataResep">
-      <ion-col col-8>
+      <ion-col col-8 (click)="bukaRinci()">
         <h2>{{data.judul}}</h2>
         <p class="deskripsi">{{data.deskripsi}}</p>
       </ion-col>
