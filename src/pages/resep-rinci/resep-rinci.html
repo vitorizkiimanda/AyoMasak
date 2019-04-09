@@ -1,48 +1,36 @@
 <ion-header>
 
   <ion-navbar color="biruTua">
-    <ion-title>Nama Masakan</ion-title>
+    <ion-title>{{data.judul}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <img src="https://cdn.idntimes.com/content-images/post/20181123/5-d774b47e8148d77dca8d419353d45462_600x400.jpg" alt="gambar">
+  <img [src]="data.foto" alt="gambar">
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis reprehenderit rem in impedit sed, autem recusandae, at architecto accusamus deleniti totam nobis atque a necessitatibus ad beatae numquam illum laboriosam?</p>
+  <p>{{data.deskripsi}}</p>
 
   <h3>Bahan</h3>
-  <ol>
-    <li>blabla</li>
-    <li>blabla</li>
-    <li>blabla</li>
-    <li>blabla</li>
-    <li>blabla</li>
-  </ol>
-  
-  <h3>Alat</h3>
-  <ol>
-    <li>blabla</li>
-    <li>blabla</li>
-    <li>blabla</li>
-    <li>blabla</li>
-    <li>blabla</li>
-  </ol>
+  <ul>
+    <li *ngFor="let x of data.bahan">{{x}}</li>
+  </ul>
 
-  <h3>Cara Memasak</h3>
+  <h3>Alat</h3>
+  <ul>
+    <li *ngFor="let x of data.alat">{{x}}</li>
+  </ul>
+
+  <h3 text-center>Cara Memasak</h3>
   <iframe 
     width="100%"
     height="auto"
-    src="https://www.youtube.com/embed/znCSG8-f1_E" 
+    [src]="data.youtube" 
     frameborder="0"
     allowfullscreen></iframe>
   <ol>
-    <li>blabla</li>
-    <li>blabla</li>
-    <li>blabla</li>
-    <li>blabla</li>
-    <li>blabla</li>
+    <li *ngFor="let x of data.caraMasak">{{x}}</li>
   </ol>
 
 </ion-content>
