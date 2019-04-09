@@ -10,7 +10,7 @@
 
   <ion-grid>
     <ion-row *ngFor="let data of dataResep">
-      <ion-col col-8>
+      <ion-col col-8 (click)="bukaRinci(data)">
         <h2>{{data.judul}}</h2>
         <p class="deskripsi">{{data.deskripsi}}</p>
       </ion-col>
@@ -22,7 +22,8 @@
         <img
           [src]="data.foto"
           alt="gambar resep"
-          class="gambar">
+          class="gambar"
+          (click)="bukaRinci(data)">
       </ion-col>
     </ion-row>
   </ion-grid>
