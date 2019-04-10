@@ -7,18 +7,18 @@
   <ion-list>
 
     <ion-item>
-      <ion-label floating color="biruTua">Email</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-label floating color="biruTua" >Email</ion-label>
+      <ion-input type="text" [(ngModel)]="email"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating color="biruTua">Password</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
     </ion-item>
 
   </ion-list>
 
-  <button ion-button block color="biruTua" (click)="masuk()">Masuk</button>
+  <button ion-button block color="biruTua" (click)="masuk(email)">Masuk</button>
   <button ion-button block clear color="biruTua" style="text-transform: none" (click)="pindah()">Belum Punya Akun? DAFTAR</button>
 
 </ion-content>

@@ -1,0 +1,35 @@
+<ion-header>
+
+  <ion-navbar color="biruTua">
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div text-center>
+    <img class="gambarProfil" [src]="data.user_photo"
+      alt="gambar">
+    <h2>{{data.user_nama}}</h2>
+  </div>
+  
+  <ion-list>
+    <ion-item>
+      <ion-icon name="mail" item-start></ion-icon>
+      {{data.user_email}}
+    </ion-item>
+    <ion-item>
+      <ion-icon name="call" item-start></ion-icon>
+      {{data.user_telepon}}
+    </ion-item>
+    <ion-item>
+      <ion-icon name="locate" item-start></ion-icon>
+      {{data.user_rumah}}
+    </ion-item>
+    <ion-item>
+      <ion-icon name="briefcase" item-start></ion-icon>
+      {{data.user_kerja}}
+    </ion-item>
+  </ion-list>
+
+</ion-content>
