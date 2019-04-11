@@ -16,21 +16,21 @@
 
     <ion-item>
       <ion-label floating color="biruTua">Nama</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text" [(ngModel)]="nama"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating color="biruTua">Email</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text" [(ngModel)]="email"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating color="biruTua">Password</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
     </ion-item>
 
   </ion-list>
 
-  <button ion-button block color="biruTua" (click)="pindah()">Daftar</button>
+  <button ion-button block color="biruTua" (click)="daftar()">Daftar</button>
 
 </ion-content>

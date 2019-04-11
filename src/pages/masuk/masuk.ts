@@ -29,8 +29,10 @@ export class MasukPage {
   }
 
   masuk(){
-    if(this.email && this.password){
-      if(this.password.length >= 8){
+    if(this.email && this.password)
+    {
+      if(this.password.length >= 8)
+      {
         this.navCtrl.setRoot(TabsPage)
       }
       else{
